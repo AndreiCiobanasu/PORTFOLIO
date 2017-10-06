@@ -1,0 +1,536 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #76b4bd;
+}
+
+h1 {
+	font-size: 80px;
+	color: #427abd;
+}
+
+h2 {
+	font-size: 30px;
+	color: #427abd;
+	margin-bottom: -5px;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+/* etape 1 */
+.nom {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	background-color: #427abd;
+	z-index: 10;
+}
+
+.prenom {
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 30px;
+	float: left;
+	color: white;
+}
+
+.prenom a {
+	color: white;
+}
+
+.nom div {
+	margin-top: 8px;
+	display: flex;
+	width: auto;
+	text-align: center;
+	float: right;
+	color: white;
+
+}
+
+.nom div p {
+	margin-right: 20px;
+}
+
+.nom div a {
+	color: white;
+}
+
+.nom div a:hover {
+	color: #ca6a6a;
+}
+
+
+/* etape 2 */
+
+.presentation-container {
+	padding-top: 200px;
+	height: 100vh;
+}
+
+.photo {
+	margin-left: 8vw;
+	float: left;
+}
+
+.photo img {
+	width: 20vw;
+	border-radius: 50px;
+}
+
+.presentation {
+	min-width: 550px;
+	width: 50vw;
+	float: right;
+	margin-right: 15vw;
+	line-height: 10px;
+}
+
+.en_savoir_plus {
+	border: 3px #427abd solid;
+	border-radius: 20px;
+	width: 140px;
+	text-align: center;
+	padding: 6px;
+	font-weight: bold;
+	transition: 0.3s;
+	margin-top: 30px;
+}
+
+.en_savoir_plus:hover {
+	background-color: #427abd;
+	color: #ca6a6a;
+	transition: 0.3s;
+}
+
+
+
+/* competences 3 */
+
+#competences {
+	padding-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	width: 850px;
+	display: flex;
+}
+
+.img_competences {
+	border-radius: 15px;
+	margin-left: 100px;
+	width: 400px;
+}
+
+
+
+/* experiences 4 */
+
+#experiences {
+	padding-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.img_ciobanasu {
+	width: 200px;
+	border: 1px black solid;
+	border-radius: 15px;
+	position: absolute;
+	z-index: 1;
+	transition: 0.3s;
+}
+
+.img_casia {
+	width: 200px;
+	border: 1px black solid;
+	border-radius: 15px;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 130px;
+	z-index: 2;
+	transition: 0.3s;
+}
+
+.img_ciobanasu:hover {
+	width: 230px;
+	transition: 0.3s;
+	z-index: 3;
+}
+
+.img_casia:hover {
+	width: 230px;
+	transition: 0.3s;
+}
+
+.ex {
+	float: right;
+}
+
+
+
+/* formations 5 */
+
+#formations {
+	padding-top: 100px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+	display: flex;
+}
+
+.img_formations {
+	border-radius: 15px;
+	width: 450px;
+	margin-left: 50px;
+}
+
+/* etudes 6 */
+
+#etudes {
+	padding-top: 100px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+	display: flex;
+	justify-content: space-between
+}
+
+.img_etudes {
+	width: 400px;
+	border-radius: 15px;
+}
+
+
+
+/* contact 7 */
+
+#contact {
+	padding-top: 100px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 200px;
+	width: 850px;
+	text-align: center;
+}
+
+
+
+
+/*  footer 8 */
+
+footer {
+	height: 100px;
+}	
+
+.contact {
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+	display: flex;
+}
+
+.contact div {
+	width: 33.3%;
+	text-align: center;
+}
+
+.contact a {
+	transition: 0.5s;
+}
+
+.contact a:hover {
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- */
+
+					/* TABLETTE */
+
+/* ----------------------------------------------------- */
+
+
+
+@media screen and (max-width: 1020px) {
+
+
+	h1 {
+		font-size: 50px;
+	}
+
+
+	/*  etape 2  */
+
+	.presentation-container {
+		padding-top: 100px;
+	}
+
+	.presentation {
+		width: 100%;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.photo {
+		float: none;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.photo img {
+		min-width: 200px;
+	}
+
+	.en_savoir_plus {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+
+	/* competences */
+
+	#competences {
+		width: 400px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.img_competences {
+		margin-left: 0px;
+		width: 300px;
+	}
+
+
+	/* experiences 4 */
+
+	#experiences {
+		width: 400px;
+		height: 500px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.img_ciobanasu {
+		width: 150px;
+		position: relative;
+	}
+
+	.img_casia {
+		width: 150px;
+		position: relative;
+		margin-top: 0px;
+		margin-left: 20px;
+	}
+
+	.img_ciobanasu:hover {
+		width: 150px;
+		box-shadow: 10px 10px 10px;
+	}
+
+	.img_casia:hover {
+		width: 150px;
+		box-shadow: 10px 10px 10px;
+	}
+
+
+	/* formations 5 */
+
+	#formations {
+		width: 400px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.img_formations {
+		width: 350px;
+		margin-left: 0px;
+	}
+
+
+	/* etudes 6 */
+
+	#etudes {
+		width: 400px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.img_etudes {
+		width: 350px;
+	}
+
+
+	/* contact 7 */
+
+	#contact {
+		width: 400px;
+	}
+
+
+	/*  footer 8 */
+
+	footer {
+		height: 70px;
+	}	
+
+	.contact {
+		width: 400px;
+	}
+
+	.contact div {
+		width: 33.3%;
+		text-align: center;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 710px) {
+
+	/* etape 1 */
+
+	.prenom {
+		display: none;
+	}
+
+	.nom div {
+		width: 370px;
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.nom div p {
+		margin-right: 10px;
+		font-size: 12px;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- */
+
+					/* MOBILE */
+
+/* ----------------------------------------------------- */
+
+
+@media screen and (max-width: 600px) {
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	/*  etape 2  */
+
+	.presentation-container {
+		padding-top: 100px;
+	}
+
+	.presentation {
+		text-align: center;
+		float: none;
+		min-width: 100%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
