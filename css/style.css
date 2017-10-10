@@ -2,7 +2,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #76b4bd;
+	background-color: red;
 }
 
 h1 {
@@ -102,7 +102,7 @@ h3 {
 
 .en_savoir_plus:hover {
 	background-color: #427abd;
-	color: #ca6a6a;
+	color: white;
 	transition: 0.3s;
 }
 
