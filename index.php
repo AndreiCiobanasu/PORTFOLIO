@@ -149,10 +149,70 @@
 
 
 		<!-- contact 7 -->
-		<div id="contact">
-			<h3 class="wow fadeIn">Contact</h3>
-		</div>
+		<section class="formulaire">
+		  <div class="container">
+		    <h2 id="#contact">Contact</h2>
+		    <hr>
+		    <div class="row">
+		      <div class="col-sm-12 col-md-12">
+		        <form method="post" action="verification.php">
+		          <div class="row">
+		          <div class="form-group col-sm-6">
+		              <label for="name" class="h4">Nom</label>
+		              <input name="objet" class="form-control" placeholder="Entrer votre nom" required>
+		              <div class="help-block with-errors"></div>
+		          </div>
+		          <div class="form-group col-sm-6">
+		              <label for="email" class="h4">E-mail</label>
+		              <input name="email" class="form-control" placeholder="Entrer votre email" required>
+		              <div class="help-block with-errors"></div>
+		          </div>
+		      </div>
+		      <div class="form-group">
+		          <label for="message" class="h4 ">Votre Message</label>
+		          <textarea name="message" class="form-control" rows="5" placeholder="Entrer votre message" required></textarea>
+		          <div class="help-block with-errors"></div>
+		      </div>
+		          <button type="submit" class="btn btn-success btn-lg pull-right ">Envoyer</button>
+		          <div></div>
+		      </form>
+		    </div>
+			</div>
+		  </div>
+		</section>
 
+		<?php
+		/* Email du destinataire (mettez ici votre email) */
+		$destinataire = "a_ciobanasu@yahoo.fr";
+
+		/* RÃ©cupÃ©ration */
+		$email = $_POST['email'];
+		$objet = $_POST['objet'];
+		$message = $_POST['message'];
+		$header = "From: " . $_POST['email'];
+
+		/* VÃ©rification */
+		if ( $objet == "" ) {
+		  echo "Veuillez indiquer votre nom.";
+		  $erreur = true;
+		}
+		if ( $message == "" ) {
+		  echo "Veuillez indiquer un message.";
+		  $erreur = true;
+		}
+
+		/* VÃ©rification du mail */
+		$email_regex = "^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+.[a-z0-9-]";
+		if ( $email == "" OR !eregi( $email_regex , $email ) ) {
+		  echo "Veuillez indiquer un email valide.";
+		  $erreur = true;
+		}
+		/* Envoi du mail */
+		if ( !$erreur ) {
+		  mail( $destinataire , $objet , $message , $header );
+		  echo "Le message a Ã©tÃ© envoyÃ©.";
+		}
+		?>
 
 
 
