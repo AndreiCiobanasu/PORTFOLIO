@@ -223,6 +223,7 @@
 				<div><a class="facebook wow fadeIn" data-wow-duration="2s" data-wow-delay="2" target="_blank" href="http://facebook.com">Facebook</a></div>
 				<div><a class="e-mail wow fadeIn" data-wow-duration="3s" data-wow-delay="3" href="mailto:a_ciobanasu@yahoo.fr">E-mail</a></div>
 			</div>
+			<div></div>
 		</footer>
 
 
