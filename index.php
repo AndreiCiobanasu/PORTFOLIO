@@ -194,7 +194,7 @@
 		    <hr>
 		    <div class="row">
 		      <div class="col-sm-12 col-md-12">
-		        <form method="post" action="index.php">
+		        <form method="post" action="verification.php">
 		          <div class="row">
 		          <div class="form-group col-sm-6">
 		              <label for="name" class="h4">Nom</label>
