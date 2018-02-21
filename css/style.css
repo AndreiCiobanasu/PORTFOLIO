@@ -2,78 +2,88 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #a6e3e4;
+	background-color: #e8f0e7;
 }
 
 h1 {
 	font-size: 80px;
 	color: #427abd;
+	font-weight: 200;
+	margin-bottom: 0px;
 }
 
 h2 {
 	font-size: 30px;
 	color: #427abd;
 	margin-bottom: -5px;
+	font-weight: 100;
 }
 
 h3 {
 	font-size: 40px;
 }
 
-/* etape 1 */
-.nom {
+
+
+
+
+
+
+
+/*////////////////////// Navbar //////////////////////*/
+nav {
 	width: 100%;
 	height: 60px;
 	position: fixed;
-	background-color: #427abd;
 	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.prenom {
-	margin-top: 10px;
+.logo {
 	margin-left: 20px;
 	font-size: 30px;
-	float: left;
-	color: white;
+	font-weight: 100px;
 }
 
-.prenom a {
-	color: white;
-}
-
-.nom div {
-	margin-top: 8px;
+#navbar div {
 	display: flex;
-	width: auto;
-	text-align: center;
 	float: right;
-	color: white;
 
 }
 
-.nom div p {
+#navbar div a {
 	margin-right: 20px;
 }
 
-.nom div a {
-	color: white;
-}
-
-.nom div a:hover {
+#navbar div a:hover {
 	color: #ca6a6a;
+	transition: 0.5s;
 }
 
 
-/* etape 2 */
+
+
+
+
+
+
+
+/*/////////////////// Présentation ///////////////////////*/
 
 .presentation-container {
-	padding-top: 200px;
 	height: 100vh;
+	min-height: 600px;
+	border: 1px rgb(13, 0, 255) solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .photo {
-	margin-left: 8vw;
-	float: left;
+	width: 300px;
+	border-radius: 20px;
 }
 
 .photo img {
@@ -82,33 +92,66 @@ h3 {
 }
 
 .presentation {
-	min-width: 550px;
-	width: 50vw;
-	float: right;
-	margin-right: 15vw;
+	width: 600px;
+	margin-left: 20px;
 	line-height: 10px;
 }
 
-.en_savoir_plus {
-	border: 3px #427abd solid;
-	border-radius: 20px;
-	width: 140px;
-	text-align: center;
-	padding: 6px;
-	font-weight: bold;
-	transition: 0.3s;
-	margin-top: 30px;
+.presentation div {
+	display: flex;
 }
 
-.en_savoir_plus:hover {
+.presentation div a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.presentation_button {
+	border: 1px #427abd solid;
+	border-radius: 20px;
+	padding: 8px;
+	padding-right: 12px;
+	padding-left: 12px;
+	transition: 0.3s;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+.presentation_button:hover {
 	background-color: #427abd;
 	color: white;
 	transition: 0.3s;
 }
 
 
+.liens {
+	width: 500px;
+	position: absolute;
+	margin-top: 270px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-/* competences 3 */
+}
+
+.img_github {
+	height: 48px;
+}
+
+.img_linkedIn {
+	height: 40px;
+}
+
+
+
+
+
+
+
+
+
+/*/////////////////// Parcours ///////////////////////*/
 
 #competences {
 	padding-top: 150px;
