@@ -5,6 +5,10 @@ body {
 	background-color: #e8f0e7;
 }
 
+p {
+	font-size: 18px;
+}
+
 h1 {
 	font-size: 80px;
 	color: #427abd;
@@ -16,7 +20,7 @@ h2 {
 	font-size: 30px;
 	color: #427abd;
 	margin-bottom: -5px;
-	font-weight: 100;
+	font-weight: 200;
 }
 
 h3 {
@@ -115,7 +119,7 @@ nav {
 	padding-right: 12px;
 	padding-left: 12px;
 	transition: 0.3s;
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-right: 20px;
 }
 
@@ -206,7 +210,7 @@ nav {
 	border-radius: 15px;
 	position: absolute;
 	margin-top: 100px;
-	margin-left: 100px;
+	margin-left: 90px;
 	z-index: 2;
 	transition: 0.3s;
 }
@@ -217,50 +221,56 @@ nav {
 	z-index: 3;
 }
 
-.ex {
+.texte_realisations {
 	float: right;
 }
 
 
 
-/* formations 5 */
 
-#formations {
-	padding-top: 100px;
+
+
+
+
+
+/*/////////////////// Connaissances ///////////////////////*/
+#connaissances {
+	width: 950px;
 	margin-top: 100px;
-	margin-left: auto;
 	margin-right: auto;
-	width: 850px;
-	display: flex;
-}
-
-.img_formations {
-	border-radius: 15px;
-	width: 450px;
-	margin-left: 50px;
-}
-
-/* etudes 6 */
-
-#etudes {
+	margin-left: auto;
 	padding-top: 100px;
-	margin-top: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 200px;
-	width: 850px;
+}
+
+#connaissances h3 {
+	text-align: center;
+}
+
+.connaissances {
 	display: flex;
-	justify-content: space-between
+	flex-direction: column;
+	margin-top: 80px;
 }
 
-.img_etudes {
-	width: 400px;
-	border-radius: 15px;
+.connaissances section {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
 
+.connaissances div {
+	text-align: center;
+	line-height: 0px;
+}
 
+.connaissances div progress {
+	width: 50px;
+}
 
-/* contact 7 */
+.connaissances img {
+	height: 50px;
+}
+
 
 
 
