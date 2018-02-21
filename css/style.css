@@ -21,6 +21,7 @@ h2 {
 
 h3 {
 	font-size: 40px;
+	margin-bottom: -20px;
 }
 
 
@@ -153,19 +154,20 @@ nav {
 
 /*/////////////////// Parcours ///////////////////////*/
 
-#competences {
+#parcours {
 	padding-top: 150px;
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
 	width: 850px;
 	display: flex;
+	align-items: center;
 }
 
-.img_competences {
+.img_parcours {
 	border-radius: 15px;
-	margin-left: 100px;
-	width: 400px;
+	margin-left: 50px;
+	width: 250px;
 }
 
 
