@@ -28,6 +28,15 @@ h3 {
 	margin-bottom: -20px;
 }
 
+a {
+	font-size: 20px;
+}
+
+a:hover {
+	transition: 0.3s;
+	color: rgba(171, 105, 105, 0.838);
+}
+
 
 
 
@@ -52,19 +61,14 @@ nav {
 	font-weight: 100px;
 }
 
-#navbar div {
+.menu_computer {
 	display: flex;
 	float: right;
 
 }
 
-#navbar div a {
+.menu_computer a {
 	margin-right: 20px;
-}
-
-#navbar div a:hover {
-	color: #ca6a6a;
-	transition: 0.5s;
 }
 
 
@@ -79,8 +83,9 @@ nav {
 
 .presentation-container {
 	height: 100vh;
-	min-height: 600px;
-	border: 1px rgb(13, 0, 255) solid;
+	width: 100%;
+	min-height: 650px;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -89,11 +94,6 @@ nav {
 .photo {
 	width: 300px;
 	border-radius: 20px;
-}
-
-.photo img {
-	width: 20vw;
-	border-radius: 50px;
 }
 
 .presentation {
@@ -108,6 +108,7 @@ nav {
 
 .presentation div a {
 	display: flex;
+	font-size: 16px;
 	align-items: center;
 	justify-content: center;
 }
@@ -129,23 +130,19 @@ nav {
 	transition: 0.3s;
 }
 
-
-.liens {
-	width: 500px;
+.voir_plus {
 	position: absolute;
-	margin-top: 270px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
+	bottom: 10px;
 }
 
-.img_github {
-	height: 48px;
+.voir_plus img {
+	width: 60px;
+	transform: rotate(270deg);
+	transition: 0.3s;
 }
 
-.img_linkedIn {
-	height: 40px;
+.voir_plus img:hover {
+	width: 80px;
 }
 
 
@@ -235,7 +232,7 @@ nav {
 
 /*/////////////////// Connaissances ///////////////////////*/
 #connaissances {
-	width: 950px;
+	width: 850px;
 	margin-top: 100px;
 	margin-right: auto;
 	margin-left: auto;
@@ -282,9 +279,9 @@ nav {
 /*/////////////////// Langues/Intérêts ///////////////////////*/
 #langues_interets{
 	width: 700px;
-	margin-top: 100px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 100px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -310,31 +307,87 @@ nav {
 
 
 
-/*  footer 8 */
 
-footer {
-	height: 100px;
-}	
 
-.contact {
-	margin-right: auto;
-	margin-left: auto;
-	width: 500px;
-	display: flex;
+
+
+
+/*/////////////////// Contact ///////////////////////*/
+#contact {
+	padding-top: 100px;
 }
 
-.contact div {
-	width: 33.3%;
+.h3_contact {
 	text-align: center;
 }
 
-.contact a {
-	transition: 0.5s;
+.contact {
+	width: 430px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.contact a:hover {
-	font-size: 18px;
-	transition: 0.5s;
+.contact a {
+	color: white;
+}
+
+.mail {
+	background-color: rgba(105, 111, 171, 0.838);
+	border: 2px rgba(105, 111, 171, 0.838) solid;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 0px;
+	padding-bottom: 0px;
+	transition: 0.3s;
+}
+
+.tel {
+	background-color: rgba(171, 105, 105, 0.838);
+	border: 2px rgba(171, 105, 105, 0.838) solid;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+	transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+/*/////////////////// Footer ///////////////////////*/
+footer {
+	width: 100%;
+	position: absolute;
+	z-index: -2;
+	background-image: linear-gradient(transparent, #b8c6b5);
+}
+
+footer .liens {
+	width: 500px;
+	position: static;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.img_github {
+	height: 48px;
+}
+
+.img_linkedIn {
+	height: 40px;
 }
 
 
@@ -354,142 +407,173 @@ footer {
 
 
 @media screen and (max-width: 1020px) {
+	/* body {
+		background-color: rgb(247, 108, 108);
+	} */
 
 
 	h1 {
-		font-size: 50px;
+		font-size: 60px;
 	}
 
 
-	/*  etape 2  */
 
+
+
+
+
+
+	/*////////////////////// Navbar //////////////////////*/
+	.menu_computer {
+		display: none;
+	}
+
+	.menu_phone {
+		width: 50px;
+		height: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.menu_phone div {
+		border: 4px #427abd solid;
+	}
+
+
+
+
+
+
+
+
+	/*/////////////////// Présentation ///////////////////////*/
 	.presentation-container {
-		padding-top: 100px;
-	}
-
-	.presentation {
-		width: 100%;
-		margin-right: 0;
 		text-align: center;
+		flex-direction: column;
+		border: 2px blue solid;
 	}
 
 	.photo {
-		float: none;
-		margin-left: 0;
+		width: 250px;
+	}
+
+	.presentation div {
+		justify-content: center;
+	}
+
+	.presentation_button:hover {
+		background-color: #e8f0e7;
+		color: #427abd;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Parcours ///////////////////////*/
+
+	#parcours {
 		text-align: center;
-	}
-
-	.photo img {
-		min-width: 200px;
-	}
-
-	.en_savoir_plus {
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-
-
-	/* competences */
-
-	#competences {
-		width: 400px;
-		flex-direction: column-reverse;
-		text-align: center;
-	}
-
-	.img_competences {
-		margin-left: 0px;
-		width: 300px;
-	}
-
-
-	/* experiences 4 */
-
-	#experiences {
-		width: 400px;
-		height: 500px;
+		width: 94%;
+		display: flex;
 		flex-direction: column;
+	}
+
+	.img_parcours {
+		margin-left: 0px;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Réalisations ///////////////////////*/
+
+	#realisations {
+		width: 94%;
+		flex-direction: column-reverse;
+	}
+
+	.realisations_img {
 		text-align: center;
 	}
 
 	.img_ciobanasu {
-		width: 150px;
-		position: relative;
+		position: static;
+		width: auto;
+		height: 150px;
 	}
 
 	.img_casia {
-		width: 150px;
-		position: relative;
+		position: static;
 		margin-top: 0px;
 		margin-left: 20px;
+		z-index: 1;
+		width: auto;
+		height: 150px;
 	}
 
-	.img_ciobanasu:hover {
-		width: 150px;
-		box-shadow: 10px 10px 10px;
+	.img_ciobanasu:hover, .img_casia:hover {
+		width: auto;
+		transition: 0.3s;
+		z-index: 1;
 	}
 
-	.img_casia:hover {
-		width: 150px;
-		box-shadow: 10px 10px 10px;
-	}
-
-
-	/* formations 5 */
-
-	#formations {
-		width: 400px;
-		flex-direction: column-reverse;
+	.texte_realisations {
+		float: none;
 		text-align: center;
 	}
 
-	.img_formations {
-		width: 350px;
-		margin-left: 0px;
+
+
+
+
+
+
+
+
+	/*/////////////////// Connaissances ///////////////////////*/
+	#connaissances {
+		width: 94%;
 	}
 
-
-	/* etudes 6 */
-
-	#etudes {
-		width: 400px;
-		flex-direction: column;
-		text-align: center;
+	.connaissances div progress {
+		width: 50px;
 	}
 
-	.img_etudes {
-		width: 350px;
-	}
-
-
-	/* contact 7 */
-
-	#contact {
-		width: 400px;
-	}
-
-
-	/*  footer 8 */
-
-	footer {
-		height: 70px;
-	}	
-
-	.contact {
-		width: 400px;
-	}
-
-	.contact div {
-		width: 33.3%;
-		text-align: center;
-	}
+	
 
 
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -535,30 +619,6 @@ footer {
 
 
 @media screen and (max-width: 600px) {
-
-
-	h1 {
-		font-size: 30px;
-	}
-
-	h2 {
-		font-size: 20px;
-	}
-
-	/*  etape 2  */
-
-	.presentation-container {
-		padding-top: 100px;
-	}
-
-	.presentation {
-		text-align: center;
-		float: none;
-		min-width: 100%;
-	}
-
-
-
 
 
 

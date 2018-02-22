@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
@@ -18,13 +20,19 @@
 		<nav id="navbar">
 			<a class="logo" href="">Andrei Ciobanasu</a>
 
-			<div>
+			<div class="menu_computer">
 				<a href="#parcours">Parcours</a>
 				<a href="#realisations">Réalisations</a>
 				<a href="#connaissances">Connaissances</a>
 				<a href="#langues_interets">Langues/Intérêts</a>
 				<a href="#contact">Contact</a>
 			</div>
+			
+			<section class="menu_phone">
+				<div></div>
+				<div></div>
+				<div></div>
+			</section>
 		</nav>
 
 
@@ -76,7 +84,7 @@
 				</p><br>
 
 				<p>
-					Si mon profil vous intéresse n'hésitez pas à me contacter. 
+					Si mon profil vous intéresse n'hésitez pas à me <a href="#contact">contacter</a>. 
 				</p>
 
 				<div>
@@ -91,17 +99,9 @@
 
 			</div>
 
-				<section class="liens">
-					<a href="https://github.com/AndreiCiobanasu" target="blank">
-						<img class="img_github" src="img/github_logo.png" alt="git logo">
-						<img class="img_github" src="img/github_texte.png" alt="git texte">
-					</a>
-
-					<a href="https://www.linkedin.com/in/andrei-ciobanasu-08332140/" target="blank">
-						<img class="img_linkedIn" src="img/linked_in.png" alt="logo linked in">
-					</a>
-				</section>
-
+			<a href="#parcours" class="voir_plus">
+				<img src="img/voir_plus.png" alt="image fléche">
+			</a>
 		</div>
 
 
@@ -148,7 +148,7 @@
 		<!--////////////////////// Réalisations ////////////////////-->
 		
 		<div id="realisations">
-			<div>
+			<div class="realisations_img">
 				<a href="http://ciobanasu.be/" target="blank"><img class="img_ciobanasu" src="img/ciobanasu.png" alt=""></a>
 			
 				<a href="http://casia.pro/" target="blank"><img class="img_casia" src="img/casia.png" alt=""></a>
@@ -184,31 +184,31 @@
 					<div>
 						<img src="img/html5.png" alt="logo html5">
 						<p>HTML5</p>
-						<progress max="100" value="90" form="form-id">25%</progress>
+						<progress max="100" value="90" form="form-id"></progress>
 					</div>
 
 					<div>
 						<img src="img/css3.png" alt="logo css3">
 						<p>CSS3</p>
-						<progress max="100" value="90" form="form-id">25%</progress>
+						<progress max="100" value="90" form="form-id"></progress>
 					</div>
 
 					<div>
 						<img src="img/js.png" alt="logo javascript">
 						<p>JavaScript</p>
-						<progress max="100" value="60" form="form-id">25%</progress>
+						<progress max="100" value="60" form="form-id"></progress>
 					</div>
 
 					<div>
 						<img src="img/php.png" alt="logo php">
 						<p>PHP</p>
-						<progress max="100" value="35" form="form-id">25%</progress>
+						<progress max="100" value="35" form="form-id"></progress>
 					</div>
 
 					<div>
 						<img src="img/responsive.png" alt="logo responsive">
 						<p>Responsive</p>
-						<progress max="100" value="70" form="form-id">25%</progress>
+						<progress max="100" value="70" form="form-id"></progress>
 					</div>
 				</section>
 
@@ -217,31 +217,31 @@
 					<div>
 						<img src="img/terminal.png" alt="logo terminal">
 						<p>Terminal</p>
-						<progress max="100" value="45" form="form-id">25%</progress>
+						<progress max="100" value="45" form="form-id"></progress>
 					</div>
 
 					<div>
 						<img src="img/MySQL.png" alt="logo mysql">
 						<p>MySQL</p>
-						<progress max="100" value="35" form="form-id">25%</progress>
+						<progress max="100" value="35" form="form-id"></progress>
 					</div>
 
 					<div>
 						<img src="img/github_logo.png" alt="logo github">
 						<p>GitHub</p>
-						<progress max="100" value="50" form="form-id">25%</progress>
+						<progress max="100" value="50" form="form-id"></progress>
 					</div>
 
 					<div>
 						<img src="img/jquery.png" alt="logo jquery">
 						<p>JQuery</p>
-						<progress max="100" value="35" form="form-id">25%</progress>
+						<progress max="100" value="35" form="form-id"></progress>
 					</div>
 
 					<div>
 						<img src="img/node.png" alt="logo node.js">
 						<p>Node.js</p>
-						<progress max="100" value="40" form="form-id">25%</progress>
+						<progress max="100" value="40" form="form-id"></progress>
 					</div>
 				</section>
 			</section>
@@ -295,20 +295,61 @@
 
 
 
-		<!-- footer 8 -->
-		<footer>
+
+
+
+
+		<!--////////////////////// Contact ////////////////////-->
+		<div id="contact">
+			<h3 class="h3_contact">Contact</h3><br><br>
+		
 			<div class="contact">
-				<div><a class="gsm wow fadeIn" data-wow-duration="1s" data-wow-delay="1" href="tel:+32475847907">Gsm</a></div>
-				<div><a class="facebook wow fadeIn" data-wow-duration="2s" data-wow-delay="2" target="_blank" href="http://facebook.com">Facebook</a></div>
-				<div><a class="e-mail wow fadeIn" data-wow-duration="3s" data-wow-delay="3" href="mailto:a_ciobanasu@yahoo.fr">E-mail</a></div>
+				<a href="mailto:a_ciobanasu@yahoo.fr">
+					<div class="mail">
+						<p>Envoyez moi un mail</p>
+					</div>
+				</a>
+		
+				<a href="tel:+0032475847907">
+					<div class="tel">
+						<p>Tel: 0475 84 79 07</p>
+					</div>
+				</a>
 			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+		<!--////////////////////// Footer ////////////////////-->
+		<footer>
+			<section class="liens">
+				<a href="https://github.com/AndreiCiobanasu" target="blank">
+					<img class="img_github" src="img/github_logo.png" alt="git logo">
+					<img class="img_github" src="img/github_texte.png" alt="git texte">
+				</a>
+			
+				<a href="https://www.linkedin.com/in/andrei-ciobanasu-08332140/" target="blank">
+					<img class="img_linkedIn" src="img/linked_in.png" alt="logo linked in">
+				</a>
+			</section>
+				
 		</footer>
 
+		<!-- link Jquery.js-->
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
 		<!-- Smoosse scroll -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/javascript.js"></script>
 
+		<!-- JS personnalisé -->
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
 
