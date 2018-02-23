@@ -1,0 +1,299 @@
+
+
+/* ----------------------------------------------------- */
+
+					/* MOBILE */
+
+/* ----------------------------------------------------- */
+@media screen and (max-width: 500px) {
+
+	p {
+		font-size: 12px;
+	}
+
+	a {
+		font-size: 14px;
+	}
+
+	.br {
+		display: none;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+
+	
+
+
+
+
+
+
+
+
+	/*////////////////////// Navbar //////////////////////*/
+
+	.logo {
+		margin-left: 20px;
+		font-size: 20px;
+	}
+
+	.open_menu {
+		display: flex;
+		width: 30px;
+		height: 20px;
+	}
+
+	.open_menu div {
+		border: 2px #427abd solid;
+	}
+
+	.menu_phone_open a {
+		font-size: 20px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Présentation ///////////////////////*/
+
+	.presentation-container {
+		min-height: 100vh;
+	}
+
+	.photo {
+		width: 140px;
+	}
+
+	.presentation {
+		width: 94%;
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 10px;
+	}
+
+	.presentation span {
+		font-size: 10px;
+	}
+
+	.presentation div {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.presentation div a {
+		font-size: 12px;
+	}
+
+	.buttons_presentation {
+		width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.presentation_button {
+		padding-right: 12px;
+		padding-left: 12px;
+		margin-right: 0;
+	}
+
+	.voir_plus img {
+		width: 30px;
+	}
+
+	.voir_plus img:hover {
+		width: 30px;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Parcours ///////////////////////*/
+
+	#parcours {
+		padding-top: 60px;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Réalisations ///////////////////////*/
+	#realisations {
+		height: auto;
+		margin-top: 0;
+		padding-top: 50px;
+	}
+
+	.img_ciobanasu {
+		width: 94%;
+		height: auto;
+	}
+
+	.img_casia {
+		width: 94%;
+		height: auto;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	
+
+
+
+
+
+
+
+	/*/////////////////// Connaissances ///////////////////////*/
+
+	#connaissances {
+		margin-top: 0;
+		padding-top: 50px;
+	}
+
+	#connaissances h3 {
+		text-align: center;
+	}
+
+	.connaissances {
+		flex-direction: row;
+		margin-top: 40px;
+	}
+
+	.connaissances section {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 94%;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Langues/Intérêts ///////////////////////*/
+	#langues_interets {
+		width: 94%;
+		flex-direction: column;
+		text-align: center;
+		padding-top: 50px;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Contact ///////////////////////*/
+
+	#contact {
+		padding-top: 50px;
+	}
+
+	.contact {
+		width: 94%;
+	}
+
+	.mail {
+		padding: 15px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.tel {
+		padding: 15px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Footer ///////////////////////*/
+	footer {
+		height: 100px;
+	}
+
+	footer .liens {
+		width: 200px;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+
+	.img_github {
+		height: 28px;
+	}
+
+	.img_linkedIn {
+		height: 22px;
+	}
+
+
+
+
+
+
+
+
+	
+}
+
+
+
+
+@media screen and (max-width: 350px) {
+	.photo {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
