@@ -58,7 +58,7 @@ nav {
 .logo {
 	margin-left: 20px;
 	font-size: 30px;
-	font-weight: 100px;
+	font-weight: 400px;
 }
 
 .menu_computer {
@@ -70,6 +70,50 @@ nav {
 .menu_computer a {
 	margin-right: 20px;
 }
+
+.open_menu {
+	display: none;
+}
+
+.menu_phone_open {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(65, 162, 159, 0.865);
+	position: fixed;
+	z-index: 10;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.x {
+	position: absolute;
+	font-size: 70px;
+	top: -80px;
+	right: 20px;
+	color: white;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.menu_close:hover {
+	color: rgba(171, 105, 105, 0.838);
+}
+
+.menu_phone_open a {
+	margin-bottom: 30px;
+	color: white;
+	transition: 0.3s;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.menu_phone_open a:hover {
+	color: rgba(171, 105, 105, 0.838);
+}
+
+
 
 
 
@@ -100,6 +144,11 @@ nav {
 	width: 600px;
 	margin-left: 20px;
 	line-height: 10px;
+}
+
+.presentation span {
+	letter-spacing: 4px;
+	color: #427abd;
 }
 
 .presentation div {
@@ -142,7 +191,7 @@ nav {
 }
 
 .voir_plus img:hover {
-	width: 80px;
+	width: 70px;
 }
 
 
@@ -278,7 +327,7 @@ nav {
 
 /*/////////////////// Langues/Intérêts ///////////////////////*/
 #langues_interets{
-	width: 700px;
+	width: 600px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 100px;
@@ -286,17 +335,7 @@ nav {
 	justify-content: space-between;
 }
 
-.interets h3 {
-	text-align: center;
-}
-
-.interets section {
-	display: flex;
-	justify-content: space-between;
-	width: 350px;
-}
-
-.interets section img {
+.interets img {
 	margin-right: 10px;
 }
 
@@ -371,7 +410,7 @@ footer {
 }
 
 footer .liens {
-	width: 500px;
+	width: 260px;
 	position: static;
 	margin-top: 100px;
 	margin-bottom: 50px;
@@ -383,12 +422,37 @@ footer .liens {
 }
 
 .img_github {
-	height: 48px;
+	height: 38px;
+	transition: 0.3s;
 }
 
 .img_linkedIn {
-	height: 40px;
+	height: 30px;
+	transition: 0.3s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -407,13 +471,10 @@ footer .liens {
 
 
 @media screen and (max-width: 1020px) {
-	/* body {
-		background-color: rgb(247, 108, 108);
-	} */
-
 
 	h1 {
 		font-size: 60px;
+		margin-bottom: 10px;
 	}
 
 
@@ -428,16 +489,18 @@ footer .liens {
 		display: none;
 	}
 
-	.menu_phone {
-		width: 50px;
-		height: 40px;
+	.open_menu {
+		width: 40px;
+		height: 30px;
+		margin-right: 20px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		cursor: pointer;
 	}
 
-	.menu_phone div {
-		border: 4px #427abd solid;
+	.open_menu div {
+		border: 3px #427abd solid;
 	}
 
 
@@ -451,20 +514,29 @@ footer .liens {
 	.presentation-container {
 		text-align: center;
 		flex-direction: column;
-		border: 2px blue solid;
+		min-height: 935px;
 	}
 
 	.photo {
-		width: 250px;
+		width: 220px;
 	}
 
 	.presentation div {
 		justify-content: center;
+		padding: 15px;
+	}
+
+	.presentation span {
+		font-size: 12px;
 	}
 
 	.presentation_button:hover {
 		background-color: #e8f0e7;
 		color: #427abd;
+	}
+
+	.voir_plus img:hover {
+		width: 60px;
 	}
 
 
@@ -579,30 +651,6 @@ footer .liens {
 
 
 
-@media screen and (max-width: 710px) {
-
-	/* etape 1 */
-
-	.prenom {
-		display: none;
-	}
-
-	.nom div {
-		width: 370px;
-		float: none;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.nom div p {
-		margin-right: 10px;
-		font-size: 12px;
-	}
-
-
-
-}
-
 
 
 
@@ -616,9 +664,62 @@ footer .liens {
 					/* MOBILE */
 
 /* ----------------------------------------------------- */
+@media screen and (max-width: 500px) {
+
+	p {
+		font-size: 12px;
+	}
+
+	a {
+		font-size: 14px;
+	}
+
+	.br {
+		display: none;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
 
 
-@media screen and (max-width: 600px) {
+	
+
+
+
+
+
+
+
+
+	/*////////////////////// Navbar //////////////////////*/
+
+	.logo {
+		margin-left: 20px;
+		font-size: 20px;
+	}
+
+	.open_menu {
+		display: flex;
+		width: 30px;
+		height: 20px;
+	}
+
+	.open_menu div {
+		border: 2px #427abd solid;
+	}
+
+	.menu_phone_open a {
+		font-size: 20px;
+	}
 
 
 
@@ -631,6 +732,57 @@ footer .liens {
 
 
 
+	/*/////////////////// Présentation ///////////////////////*/
+
+	.presentation-container {
+		min-height: 100vh;
+	}
+
+	.photo {
+		width: 150px;
+	}
+
+	.presentation {
+		width: 94%;
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 10px;
+	}
+
+	.presentation span {
+		font-size: 10px;
+	}
+
+	.presentation div {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.presentation div a {
+		font-size: 12px;
+	}
+
+	.buttons_presentation {
+		width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.presentation_button {
+		padding-right: 12px;
+		padding-left: 12px;
+		margin-right: 0;
+	}
+
+	.voir_plus img {
+		width: 30px;
+	}
+
+	.voir_plus img:hover {
+		width: 30px;
+	}
 
 
 
@@ -640,6 +792,141 @@ footer .liens {
 
 
 
+	/*/////////////////// Parcours ///////////////////////*/
+
+	#parcours {
+		padding-top: 60px;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Réalisations ///////////////////////*/
+	#realisations {
+		height: auto;
+		margin-top: 0;
+		padding-top: 50px;
+	}
+
+	.img_ciobanasu {
+		width: 94%;
+		height: auto;
+	}
+
+	.img_casia {
+		width: 94%;
+		height: auto;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	
+
+
+
+
+
+
+
+	/*/////////////////// Connaissances ///////////////////////*/
+
+	#connaissances {
+		margin-top: 0;
+		padding-top: 50px;
+	}
+
+	#connaissances h3 {
+		text-align: center;
+	}
+
+	.connaissances {
+		flex-direction: row;
+		margin-top: 40px;
+	}
+
+	.connaissances section {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 94%;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Langues/Intérêts ///////////////////////*/
+	#langues_interets {
+		width: 94%;
+		flex-direction: column;
+		text-align: center;
+		padding-top: 50px;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Contact ///////////////////////*/
+
+	#contact {
+		padding-top: 50px;
+	}
+
+	.contact {
+		width: 94%;
+	}
+
+	.mail {
+		padding: 15px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.tel {
+		padding: 15px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+
+
+
+
+
+
+
+
+	/*/////////////////// Footer ///////////////////////*/
+	footer {
+		height: 100px;
+	}
+
+	footer .liens {
+		width: 200px;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+
+	.img_github {
+		height: 28px;
+	}
+
+	.img_linkedIn {
+		height: 22px;
+	}
 
 
 
@@ -654,7 +941,11 @@ footer .liens {
 
 
 
-
+@media screen and (max-width: 350px) {
+	.photo {
+		display: none;
+	}
+}
 
 
 

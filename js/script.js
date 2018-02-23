@@ -1,5 +1,29 @@
 $(document).ready(function () {
 
+    /*////////////////////// Navbar //////////////////////*/
+    $('.open_menu').click(function () {
+        $('.menu_phone_open').css('display', 'flex');
+        $('.open_menu').css('visibility', 'hidden');
+        $('body').css('position', 'fixed');
+    });
+
+    $('.menu_close').click(function () {
+        $('.menu_phone_open').css('display', 'none');
+        $('.open_menu').css('visibility', 'visible');
+        $('body').css('position', 'static');
+    });
+
+
+
+
+
+
+
+
+
+
+   /*/////////////////// Footer ///////////////////////*/
+
     /* button "Envoyez moi un mail" */
     $(".mail").mouseover(function () {
         $('.mail').css('background-color','#e8f0e7');
