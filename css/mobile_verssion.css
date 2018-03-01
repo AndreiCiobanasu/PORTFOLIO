@@ -53,14 +53,20 @@
 		width: 30px;
 		height: 20px;
 	}
+	
+	.openMenuColor {
+		border: 2px white solid;
+	}
 
-	.open_menu div {
+	.divMenu {
 		border: 2px #427abd solid;
 	}
 
 	.menu_phone_open a {
 		font-size: 20px;
 	}
+
+
 
 
 

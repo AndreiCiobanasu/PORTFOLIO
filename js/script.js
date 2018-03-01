@@ -13,6 +13,21 @@ $(document).ready(function () {
         $('body').css('position', 'static');
     });
 
+    // Add detection on scroll action
+    $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+        $('#navbar').addClass('navColor');
+        $('#navbar a').addClass('navElemColor');
+        $(".open_menu div").addClass("openMenuColor");
+        $(".open_menu div").removeClass("divMenu");
+    } else {
+        $('#navbar').removeClass('navColor');
+        $("#navbar a").removeClass("navElemColor");
+        $(".open_menu div").removeClass("openMenuColor");
+        $(".open_menu div").addClass("divMenu");
+    }
+    });
+
 
 
 
