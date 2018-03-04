@@ -420,7 +420,6 @@ footer {
 	width: 100%;
 	position: absolute;
 	z-index: -2;
-	background-image: linear-gradient(transparent, #b8c6b5);
 }
 
 footer .liens {
